@@ -1,0 +1,47 @@
+<html><body><pre>
+
+
+/*12. Enter a number from the user if the user enter 1 then you will perform addition operation by entering 2 number from user add it and display answer. if user enter 2 then subtract or if user enter 3 then multiply or if user enter 4 then divide or if user enter 5 then modulo or if any other number then print invalid .if user want to quit the program then user will enter Q*/
+#include <stdio.h>
+
+int main() {
+    char choice;
+    int a, b;
+    while(1) {
+        printf("\nEnter your choice:\n");
+        printf("1.Add  2.Subtract  3.Multiply  4.Divide  5.Modulo  Q.Quit\n");
+        scanf(" %c", &choice);
+        if(choice == 'Q' || choice == 'q')
+            break;
+        printf("Enter two numbers: ");
+        scanf("%d%d", &a, &b);
+        switch(choice) {
+            case '1': printf("Result = %d\n", a + b); break;
+            case '2': printf("Result = %d\n", a - b); break;
+            case '3': printf("Result = %d\n", a * b); break;
+            case '4': 
+                if(b != 0) printf("Result = %d\n", a / b);
+                else printf("Division by zero not allowed\n");
+                break;
+            case '5': 
+                if(b != 0) printf("Result = %d\n", a % b);
+                else printf("Modulo by zero not allowed\n");
+                break;
+            default: printf("Invalid choice!\n");
+        }
+    }
+    printf("Program Ended.\n");
+    return 0;
+}   /* Enter your choice:
+    1.Add  2.Subtract  3.Multiply  4.Divide  5.Modulo  Q.Quit
+    1
+    Enter two numbers: 5 7
+    Result = 12
+    Enter your choice:
+    3
+    Enter your choice:
+    Q
+    Program Ended*/
+<a href="4.loops.html">Loops</a>
+
+</html></body></pre>

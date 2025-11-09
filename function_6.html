@@ -1,0 +1,25 @@
+<html><body><pre>
+
+
+// 6. Swap numbers using Call by function ?
+#include <stdio.h>
+
+void swap(int x, int y) {
+    int temp = x;
+    x = y;
+    y = temp;
+    printf("After swap In function: a=%d b=%d\n", x, y);
+}
+
+void main() {
+    int a = 5, b = 10;
+    swap(a, b);
+    printf(" After swap In main: a=%d b=%d\n", a, b);
+    return 0;
+}/*Before swap: a = 5, b = 10  
+After swap in function: x = 10, y = 5  
+After swap In main: a = 5, b = 10  
+*/
+
+<a href="3.functions.html">Functions</a>
+</html></body></pre>

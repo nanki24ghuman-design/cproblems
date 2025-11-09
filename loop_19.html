@@ -1,0 +1,26 @@
+<html><body><pre>
+
+//enter password from the user maximum 20 digits/character press enter key if you exit?
+#include <stdio.h>
+int main() {
+    char pass[21];
+    int i = 0;
+    char ch;
+    printf("Enter password (max 20 chars, press Enter to exit): ");
+    while (i < 20) {
+        ch = getchar();     // works in VS Code
+        if (ch == '\n')     // Enter key
+            break;
+        pass[i] = ch;
+        i++;
+    }
+    pass[i] = '\0';
+    printf("\nYour password is: %s\n", pass);
+    return 0;
+}   /*o/p:
+    Enter password (max 20 chars, press Enter to exit): mySecret123
+    Your password is: mySecret123 */
+
+
+<a href="4.loops.html">Loops</a>
+</html></body></pre>

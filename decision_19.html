@@ -1,0 +1,24 @@
+<html><body><pre>
+
+
+//19. Enter a character from user and it is in upper case, lower case, special characters or numbers ?
+#include <stdio.h>
+void main() {
+    char ch;
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+    if(ch >= 'A' && ch <= 'Z')
+        printf("It is an Uppercase letter");
+    else if(ch >= 'a' && ch <= 'z')
+        printf("It is Lowercase letter");
+    else if(ch >= '0' && ch <= '9')
+        printf("It is a Number");
+    else
+        printf("Special character");
+        return 0;
+}   /*Enter a character: A  
+    Output: It is an Uppercase letter. */
+
+    <a href="2.decision.html">Decision Control Structures</a>
+
+</html></body></pre>

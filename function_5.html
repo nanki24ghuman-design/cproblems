@@ -1,0 +1,27 @@
+<html><body><pre>
+
+
+//5. Swap numbers using Call by address ?
+
+#include <stdio.h>
+void swap(int *x, int *y) {
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+void main() {
+    int a,b;
+    printf("Enter two numbers: "); 
+    scanf("%d %d", &a, &b);
+    printf("\nBefore swapping: a=%d,b=%d\n",a,b);
+    swap(&a, &b);
+    printf("after swapping: a=%d,b=%d", a, b);
+    return 0;
+}/*Enter first number: 10
+Enter second number: 20
+After swap: a = 20, b = 10
+*/
+
+<a href="3.functions.html">Functions</a>
+</html></body></pre>

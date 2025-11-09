@@ -1,0 +1,33 @@
+<html><body><pre>
+
+//enter 5 values of array from the user,enter a value from the user and search this value in array.if value is found then print found pr not then print not found?
+#include&lt;stdio.h&gt;
+void main()
+{
+int arr[5];
+int i,num,found=0;
+printf("Enter 5 numbers ");
+for(i=0;i<5;i++){
+scanf("%d",&arr[i]);
+}
+printf("Enter a number to search ");
+scanf("%d",&num);
+for(i=0;i<5;i++){
+if(arr[i]==num)
+{
+found=1;
+break;
+}
+}
+if(found==1)
+printf("Found");
+else
+printf("Not found");
+return 0;
+} /* Enter 5 elements: 3 6 9 12 15  
+Enter value to search: 9  
+Found   */
+
+<a href="8.single_dimen_arr.html">Single Dimensional Array</a>
+
+</html></body></pre>

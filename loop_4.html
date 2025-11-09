@@ -1,0 +1,34 @@
+<html><body><pre>
+
+//4. Enter a number from the user and print all digit of the number in separate line ?
+#include <stdio.h>
+void main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    int rev = 0, rem;
+
+    while(num > 0) {
+        rem = num % 10;
+        rev = rev * 10 + rem;   // reverse number first
+        num = num / 10;
+    }
+
+    while(rev > 0) {
+        rem = rev % 10;         // print digits left to right
+        printf("%d\n", rem);
+        rev = rev / 10;
+    }
+     return 0;
+}
+    /*o/p:
+    Enter a number: 1234
+    1
+    2
+    3
+    4*/
+
+<a href="4.loops.html">Loops</a>
+
+</html></body></pre>

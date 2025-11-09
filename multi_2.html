@@ -1,0 +1,35 @@
+<html><body><pre>
+
+//2. Enter the matrix from and transpose them ?
+#include <stdio.h>
+int  main() {
+    int a[2][2], t[2][2], i, j;
+    printf("Enter 4 numbers for matrix:\n");
+    for(i=0; i<2; i++) //row
+        for(j=0; j<2; j++) //column
+            scanf("%d", &a[i][j]);
+
+        for(i=0; i<2; i++)
+        for(j=0; j<2; j++)
+            t[j][i] = a[i][j];
+
+    printf("\nTranspose of Matrix:\n");
+    for(i=0; i<2; i++) {
+        for(j=0; j<2; j++)
+            printf("%d ", t[i][j]);
+        printf("\n");
+    }
+   return 0;
+}
+/*Enter 4 numbers for matrix:
+23
+45
+78
+20
+
+Transpose of Matrix:
+23 78 
+45 20 */
+
+<a href="6.multi_dimen_arr.html">Multi Dimensional Array</a>
+</html></body></pre>

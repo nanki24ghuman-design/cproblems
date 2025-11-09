@@ -1,0 +1,30 @@
+<html><body><pre>
+
+
+//enter an array from the user and print the number which is even?
+#include&lt;stdio.h&gt;
+void main()
+{
+int arr[20],n,i;
+printf("Enter size of array: ");
+scanf("%d",&n);
+printf("Enter %d elements: ",n);
+for(i=0;i&lt;n;i++)
+{
+scanf("%d",&arr[i]);
+}
+printf("Even numbers are ");
+for(i=0;i&lt;n;i++){
+if(arr[i]%2==0)
+{
+printf(" %d",arr[i]);
+}
+}
+return 0;
+}/*Enter size of array: 6  
+Enter 6 elements: 3 6 9 12 15 18  
+Even numbers: 6 12 18  */
+
+<a href="8.single_dimen_arr.html">Single Dimensional Array</a>
+
+</html></body></pre>

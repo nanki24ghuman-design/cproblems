@@ -1,0 +1,81 @@
+<html><body><pre>
+
+//1. Write a program to enter 2 number from the users add them and display the answer, again enter 2 number from the user subtract them and display the answer, again enter 2 number from the user add them and display the answer, again enter 2 number from the user multiply them and display the answer, again enter 2 number from the user subtract them and display the answer, again enter 2 number from the user multiply them and display the answer, again enter 2 number from the user divide them and display the answer, again enter 2 number from the user divide them and display the answer, again enter 2 number from the user add them and display the answer ?
+#include <stdio.h>
+void add() {
+    int a,b;
+    printf("Enter two numbers: ");
+    scanf("%f %f",&a,&b);
+    printf("Sum = %.2f\n", a+b);
+}
+void sub() {
+    int  a,b;
+    printf("Enter two numbers: ");
+    scanf("%f %f",&a,&b);
+    printf("Difference = %.2f\n", a-b);
+}
+void mul() {
+    int  a,b;
+    printf("Enter two numbers: ");
+    scanf("%f %f",&a,&b);
+    printf("Product = %.2f\n", a*b);
+}
+void divi() {
+    float a,b;
+    printf("Enter two numbers: ");
+    scanf("%f %f",&a,&b);
+    if(b!=0) printf("Division = %.2f\n", a/b);
+    else printf("Division by zero not allowed\n");
+}
+void main() {
+    add();
+    sub();
+    add();
+    mul();
+    sub();
+    mul();
+    divi();
+    divi();
+    add();
+    return 0;
+}
+/*Enter first number: 5
+Enter second number: 3
+Sum = 8
+
+Enter first number: 9
+Enter second number: 4
+Subtraction = 5
+
+Enter first number: 2
+Enter second number: 3
+Sum = 5
+
+Enter first number: 4
+Enter second number: 5
+Multiplication = 20
+
+Enter first number: 7
+Enter second number: 2
+Subtraction = 5
+
+Enter first number: 6
+Enter second number: 3
+Multiplication = 18
+
+Enter first number: 8
+Enter second number: 2
+Division = 4
+
+Enter first number: 10
+Enter second number: 5
+Division = 2
+
+Enter first number: 1
+Enter second number: 2
+Sum = 3
+*/
+
+<a href="3.functions.html">Functions</a>
+
+</html></body></pre>

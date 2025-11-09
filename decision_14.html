@@ -1,0 +1,45 @@
+<html><body><pre>
+
+
+/*14. Enter a number from the user if the user enters 30 then print the month in which we have 30 days. If the enter 31 then print the month 31 days for 28, 29 print the month else everything is invalid ?*/
+
+#include<stdio.h>
+#include<conio.h>
+int num;
+void main()
+{
+clrscr();
+printf("enter the maximum possible days in a month:");
+scanf("%d",&num);
+switch(num)
+{
+case(31):
+printf("january,march,may,july,august,october,december");
+break;
+case(30):
+printf("april,june,september,november");
+break;
+case(28):
+printf("february");
+break;
+case(29):
+printf("february");
+break;
+default:
+printf("no month exists");}
+getch();
+}
+
+    /*Enter no. of days: 30  
+    Output: April, June, September, November.
+    Enter a number: 31  
+    Output: January, March, May, July, August, October, December.
+    Enter no. of days:28
+    output:Februrary
+    enter no. of days:25
+    output: no month exists
+  
+*/
+<a href="2.decision.html">Decision Control Structures</a>
+
+</html></body></pre>

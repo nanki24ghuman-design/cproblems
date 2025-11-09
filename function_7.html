@@ -1,0 +1,27 @@
+<html><body><pre>
+
+
+//7. Make function for find out power of number, enter the number and power from user ?
+#include <stdio.h>
+void power(int n, int p) {
+    int result = 1;
+    for(int i=1; i<=p; i++)
+        result *= n;
+    return result;
+}
+void main() {
+    int num,pow,ans;
+    printf("Enter number: ");
+    scanf("%d",&num);
+    printf("Enter power: ");
+    scanf("%d",&pow);
+    ans=power(num, pow);
+    printf("Result = %d", ans);
+    return 0;
+}/*Enter number: 2
+Enter power: 5
+Result = 32
+*/
+<a href="3.functions.html">Functions</a>
+</html></body></pre>
+

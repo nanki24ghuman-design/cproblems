@@ -1,0 +1,33 @@
+<html><body><pre>
+
+
+//Write a program to return an array from function ?
+
+#include <stdio.h>
+
+// Function with void return type
+void getArray(int arr[], int size) {
+    int i;
+    for (i = 0; i < size; i++) {
+        arr[i] = (i + 1) * 10; // filling array with some values
+    }
+}
+
+int main() {
+    int arr[5];
+    int i;
+
+    // Function call
+    getArray(arr, 5);
+
+    // Displaying array
+    printf("Array elements are:\n");
+    for (i = 0; i < 5; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+<a href="3.functions.html">Functions</a>
+
+</html></body></pre>

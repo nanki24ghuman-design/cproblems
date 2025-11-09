@@ -1,0 +1,27 @@
+<html><body><pre>
+
+//13. Enter the number from user and check its palindrome or not?
+#include <stdio.h>
+int main() {
+    int num, original, rev = 0, rem;
+     printf("Enter a number: ");
+    scanf("%d", &num);
+     original = num; // store original number
+    while(num != 0) {
+        rem = num % 10;          // get last digit
+        rev = rev * 10 + rem;    // build reversed number
+        num = num / 10;          // remove last digit
+    }
+    if(original == rev)
+        printf("Number is palindrome");
+    else
+        printf("Number is not palindrome");
+
+    return 0;
+}   /* o/p:
+     Enter a number: 121
+    Number is palindrome*/
+
+<a href="4.loops.html">Loops</a>
+
+</html></body></pre>

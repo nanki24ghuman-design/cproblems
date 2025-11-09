@@ -1,0 +1,20 @@
+<html><body><pre>
+
+
+//21. Enter date, month, year and check it is valid date or not ?
+#include <stdio.h>
+void main() {
+    int d, m, y;
+    printf("Enter date (dd mm yyyy): ");
+    scanf("%d %d %d", &d, &m, &y);
+    if ((d >= 1 && d <= 31) && (m >= 1 && m <= 12) && (y > 0))
+        printf("Valid date.\n");
+    else
+        printf("Invalid date.\n");
+   return 0;
+}   /*Enter date (dd mm yyyy): 15 8 2025  
+    Output: Valid date. */
+
+<a href="2.decision.html">Decision Control Structures</a>
+
+</html></body></pre>

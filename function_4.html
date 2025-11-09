@@ -1,0 +1,85 @@
+<html><body><pre>
+
+
+//4. Making following program using local and global variable ? Factorial , Reverse , Palindrome , Prime numbers, Armstrong , Fibonacci
+#include <stdio.h>
+int num; // global variable
+void factorial() {
+    int i, f = 1;
+    for(i = 1; i <= num; i++)
+        f *= i;
+    printf("\nFactorial = %d", f);
+}
+void reverse() {
+    int n = num, r = 0;
+    while(n != 0) {
+        r = r * 10 + n % 10;
+        n /= 10;
+    }
+    printf("\nReverse = %d", r);
+}
+void palindrome() {
+    int n = num, r = 0, t = n;
+    while(n != 0) {
+        r = r * 10 + n % 10;
+        n /= 10;
+    }
+    if(t == r)
+        printf("\nPalindrome = Yes");
+    else
+        printf("\nPalindrome = No");
+}
+void prime() {
+    int i, c = 0;
+    for(i = 2; i < num; i++)
+        if(num % i == 0)
+            c = 1;
+    if(c == 0)
+        printf("\nPrime = Yes");
+    else
+        printf("\nPrime = No");
+}
+void armstrong() {
+    int n = num, r, s = 0, t = n;
+    while(n != 0) {
+        r = n % 10;
+        s += r * r * r;
+        n /= 10;
+    }
+    if(s == t)
+        printf("\nArmstrong = Yes");
+    else
+        printf("\nArmstrong = No");
+}
+void fibonacci() {
+    int a = 0, b = 1, c, i;
+    printf("\nFibonacci: ");
+    for(i = 1; i <= num; i++) {
+        printf("%d ", a);
+        c = a + b;
+        a = b;
+        b = c;
+    }
+}
+void main() {
+    printf("Enter number: ");
+    scanf("%d", &num);
+    factorial();
+    reverse();
+    palindrome();
+    prime();
+    armstrong();
+    fibonacci();
+    return 0;
+}/*Enter number: 5
+Factorial = 120
+Reverse = 5
+Palindrome = Yes
+Prime = Yes
+Armstrong = No
+Fibonacci: 0 1 1 2 3
+*/
+
+<a href="3.functions.html">Functions</a>
+
+</html></body></pre>

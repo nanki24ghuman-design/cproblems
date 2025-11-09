@@ -1,0 +1,27 @@
+<html><body><pre>
+
+//enter an array from the user and print the array in reverse order?
+#include&lt;stdio.h&gt;
+void main()
+{
+int arr[10],n,i;
+printf("Enter size of array: ");
+scanf("%d",&n);
+printf("Enter %d elements: ",n);
+for(i=0;i&lt;n;i++){
+scanf("%d\n",&arr[i]);
+}
+printf("In reverse order ");
+for(i=n-1;i&gt;=0;i--)
+{
+printf("%d",arr[i]);
+}
+return 0;
+}/*Enter size of array: 5  
+Enter 5 elements: 10 20 30 40 50  
+Reverse order: 50 40 30 20 10  */
+
+<a href="8.single_dimen_arr.html">Single Dimensional Array</a>
+
+
+</html></body></pre>

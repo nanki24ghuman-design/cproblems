@@ -1,0 +1,37 @@
+<html><body><pre>
+
+// Enter a number from the user and check that the number is divisible by any prime number or not ?
+#include <stdio.h>
+void main() {
+    int num, i, j, isPrime, flag = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    for(i = 2; i <= num; i++) {         // check for all numbers till num
+        isPrime = 1;
+        for(j = 2; j <= i/2; j++) {     // check if i is prime
+            if(i % j == 0) {
+                isPrime = 0;
+                break;
+            }
+        }
+        if(isPrime && num % i == 0) {   // if i is prime and divides num
+            printf("%d is divisible by prime number %d\n", num, i);
+            flag = 1;
+        }
+    }
+    if(flag == 0)
+        printf("%d is not divisible by any prime number\n", num);
+
+    return 0;
+}
+    /* o/p:
+    Enter a number: 60
+    60 is divisible by prime number 2
+    60 is divisible by prime number 3
+    60 is divisible by prime number 5
+*/
+
+<a href="4.loops.html">Loops</a>
+
+</html></body></pre>

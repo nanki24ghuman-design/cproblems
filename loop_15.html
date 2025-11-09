@@ -1,0 +1,19 @@
+<html><body><pre>
+
+//15. Enter a number from user and print first digit of number ?
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    while(num >= 10) {   // loop until only first digit remains
+        num = num / 10;
+    }
+    printf("First digit = %d", num);
+    return 0;
+}   /*o/p:
+    Enter a number: 4589  
+    First digit = 4 */
+
+<a href="4.loops.html">Loops</a>
+</html></body></pre>

@@ -1,0 +1,29 @@
+<html><body><pre>
+
+//enter a number from the user and check if it is of 1digit or 2 digit or 3digit or 4 digit or 5 digit ?
+#include<stdio.h>
+#include<conio.h>
+#include<conio.h>
+void main()
+{
+int num;
+clrscr();
+printf("enter a number:");
+scanf("%d",&num);
+if(num>=0&&num<=9)
+printf("it is a 1 digit number");
+else if(num>=10&&num<=99)
+printf("it is a 2 digit number");
+else if(num>=100&&num<=999)
+printf("it is a 3 digit number");
+else if(num>=1000&&num<=9999)
+printf("it is a 4 digit number");
+else if(num>=10000&&num<=99999)
+printf("it is a 5 digit number");
+else
+printf("number is more than 5 digits or invalid");
+delay(5000);
+}
+<a href="2.decision.html">Decision Control Structures</a>
+
+</html></body></pre>

@@ -1,0 +1,29 @@
+<html><body><pre>
+
+
+//1. Enter the four number from user and print it into matrix
+#include <stdio.h>
+int  main() {
+    int a[2][2];
+    printf("Enter 4 numbers: ");
+    for(int i=0;i<2;i++) // for row
+        for(int j=0;j<2;j++) // for column
+            scanf("%d", &a[i][j]);
+    printf("Matrix:\n");
+    for(int i=0;i<2;i++) {  // row data
+        for(int j=0;j<2;j++) // colum data
+            printf("%d ", a[i][j]);
+        printf("\n");
+    }
+    return 0;
+}
+/*Enter 4 numbers: 2 
+    2
+    45
+    67
+    Matrix:
+    2 2 
+    45 67 */
+<a href="6.multi_dimen_arr.html">Multi Dimensional Array</a>
+
+</html></body></pre>

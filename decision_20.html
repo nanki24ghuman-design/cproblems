@@ -1,0 +1,23 @@
+<html><body><pre>
+
+
+//20. Enter the year from user and check its leap year or not ?
+#include <stdio.h>
+#include<conio.h>
+void main() {
+    int year;
+clrscr();
+    printf("Enter year: ");
+    scanf("%d", &year);
+    if((year%4==0 && year%100!=0) || (year%400==0))
+        printf(" It is a Leap year");
+    else
+        printf("Not a leap year");
+        return 0;
+}   /*Enter a year: 2024  
+    Output: It is a leap year.
+    Enter a year: 2023  
+    Output: It is not a leap year. */
+
+<a href="2.decision.html">Decision Control Structures</a>
+</html></body></pre>
