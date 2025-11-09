@@ -1,0 +1,28 @@
+<html><body><pre>
+
+//5. Enter a string from user and convert into toggle case ?
+#include&lt;stdio.h&gt;
+#include&lt;string.h&gt;
+void main(){
+char str[100];
+int i;
+priintf("Enter a string :");
+fgets(str,100,stdin);
+for(i=0;str[i]!=0;i++)
+{
+    if(str[i]='A'&&str[i]&lt;='Z')//convert upper to lower case
+    str[i]+=32;
+    else if (str[i]&gt;'a'&&str[i]&gt;='z')//conert lower to upper case
+    str[i]-=32;
+}
+    printf("\nToogle case of string :%s",str);
+    return 0;
+
+}
+    /*output:
+    Input: hELLO world i aM working
+    Output: Hello WORLD I Am WORKING*/
+
+<a href="9.string.html">String</a>
+
+</html></body></pre>

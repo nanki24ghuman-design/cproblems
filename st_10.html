@@ -1,0 +1,39 @@
+<html><body><pre>
+
+//10. Enter the string from user ,enter a number from user ,if the user enter 0 then you will print first character of string ,if the user enter 1 then you will print second character of string ,if user enter 2 then you will print third character of string ,if user enter 3 then you point fourth character of string and if out of string then you will print out of bound ?
+#include&lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+void main() {
+    char str[100];
+    int n, len;
+    printf("Enter a string: ");
+    scanf("%s",str);
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    len = strlen(str);
+
+    if(n &gt;= 0 && n &lt; len)
+        printf("\nCharacter: %c", str[n]);   // print nth character
+    else
+        printf("\nOut of bound!");
+
+    return 0;
+}
+    /*OUTPUT*/
+    /* Enter a string: HELLObye
+    Enter a number: 2
+    Output: 
+    Character: L
+      
+    
+    Input: Enter a number: 10
+    Output:
+    Out of bound!
+*/
+
+<a href="9.string.html">String</a>
+
+</html></body></pre>

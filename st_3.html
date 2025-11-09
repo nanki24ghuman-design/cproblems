@@ -1,0 +1,31 @@
+<html><body><pre>
+
+//3. Enter a string from user and convert into sentence case?
+#include &lt;stdio.h&gt;
+
+void  main() {
+    char str[100];
+    int i;
+    printf("Enter a string: ");
+    scanf("%s",str);
+
+    // convert first letter to uppercase
+    if(str[0]&gt;='a' && str[0]&lt;='z')
+        str[0] = str[0] - 32;
+
+    // convert rest to lowercase
+    for(i=1; str[i]!='\0'; i++) {
+        if(str[i]&gt;='A' && str[i]&lt;='Z')
+            str[i] = str[i] + 32;
+    }
+
+    printf("Sentence case: %s", str);
+    return 0;
+}
+    /*output:
+    Input: heLLo woRLD i am stuDYinG
+    Output: Hello world i am studying*/
+
+<a href="9.string.html">String</a>
+
+</html></body></pre>

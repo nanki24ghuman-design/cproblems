@@ -1,0 +1,33 @@
+<html><body><pre>
+
+//12. Enter the string from user and copy reverse order into another string ?
+
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+void main() {
+    char str1[100], str2[100];
+    int i, j, len;
+    printf("Enter a string: ");
+    scanf("%s",str1);
+
+    len = strlen(str1);
+    j = 0;
+
+    // copy characters from end to start
+    for(i = len - 1; i &gt;= 0; i--) {
+        str2[j] = str1[i];
+        j++;
+    }
+    str2[j] = '\0';  // null terminate
+
+    printf("\nReversed string: %s", str2);
+    return 0;
+}
+     /*OUTPUT*/
+    /* Enter a string :Hellobye
+    output:eybolleH */
+
+<a href="9.string.html">String</a>
+
+
+</html></body></pre>

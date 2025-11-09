@@ -1,0 +1,28 @@
+<html><body><pre>
+
+//1. Enter a string from user and convert in uppercase ?
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+void main() {
+    char str[100];
+    int i;
+    printf("Enter a string: ");
+    fgets(str ,100,stdin);
+
+    for(i=0; str[i]!='\0'; i++) {
+        if(str[i]&gt;='a' && str[i]&lt;='z')
+            str[i] = str[i] - 32;
+    }
+
+    printf("Uppercase string: %s", str);
+    return 0;
+}
+
+    /*output:
+Input: hello bye 
+Output: HELLO BYE*/
+
+<a href="9.string.html">String</a>
+
+</html></body></pre>

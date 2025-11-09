@@ -1,0 +1,26 @@
+<html><body><pre>
+
+//8. Enter a string from user and concatenate the string ?
+
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+void main() {
+    char str1[100], str2[100];
+    printf("Enter first string: ");
+    fgets(str1 ,100,stdin);
+    printf("Enter second string: ");
+    fgets(str2 ,100,stdin);
+
+    strcat(str1, str2);  // join str2 at the end of str1
+
+    printf("\nConcatenated string: %s", str1);
+    return 0;
+}
+    /*OUTPUT*/
+    /* enter first string: Hello
+    Enter second string: World 
+    Output: HelooWorld */
+
+<a href="9.string.html">String</a>
+
+</html></body></pre>

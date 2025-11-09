@@ -1,0 +1,23 @@
+<html><body><pre>
+
+
+//9. Enter a string from user and copy that string into another string ?
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+void main() {
+    char str1[100], str2[100];
+    printf("Enter a string: ");
+    fgets(str1,100,stdin);
+
+    strcpy(str2, str1);  // copy str1 into str2
+
+    printf("\nCopied string: %s", str2);
+    return 0;
+}
+    /*OUTPUT*/
+    /* Enter a string:hellobye
+      Outout: Copied string:hellobye */
+
+<a href="9.string.html">String</a>
+
+</html></body></pre>

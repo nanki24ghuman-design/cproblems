@@ -1,0 +1,31 @@
+<html><body><pre>
+
+//16. Enter the string from user and count all vowels ?
+
+#include &lt;stdio.h&gt;
+void main() {
+    char str[100];
+    int i, count = 0;
+    printf("Enter a string: ");
+    scanf("%s",str);
+
+    for(i = 0; str[i] != '\0'; i++) {
+        if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'||
+           str[i]=='A'||str[i]=='E'||str[i]=='I'||str[i]=='O'||str[i]=='U')
+            count++;
+    }
+
+    printf("\nTotal vowels: %d", count);
+
+    return 0;
+}
+       /*OUTPUT*/
+       /*INPUT:
+       Enter a string: Hello World
+       OUTPUT:
+       Total vowels: 3
+     */
+
+<a href="9.string.html">String</a>
+
+</html></body></pre>

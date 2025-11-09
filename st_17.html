@@ -1,0 +1,36 @@
+<html><body><pre>
+
+
+//17. Enter the string from user and enter bound number and print character on that bound ?
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+void  main() {
+    char str[100];
+    int pos, len;
+    printf("Enter a string: ");
+    scanf("%s",str);
+
+    len = strlen(str);
+
+    printf("Enter position (starting from 0): ");
+    scanf("%d", &pos);
+
+    if(pos &gt;= 0 && pos &lt; len)
+        printf("\nCharacter at position %d is: %c", pos, str[pos]);
+    else
+        printf("\nOut of bound!");
+
+    return 0;
+}
+/*OUTPUT*/
+/*iNPUT;
+Enter a string: HELLO  
+Enter position (starting from 0): 2
+OUTPUT:
+Character at position 2 is: L
+*/
+
+<a href="9.string.html">String</a>
+
+</html></body></pre>

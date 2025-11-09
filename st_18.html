@@ -1,0 +1,45 @@
+<html><body><pre>
+
+
+//18. String palindrome example (using reverse) ?
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+void main() {
+    char str[100], rev[100];
+    int i, j, len;
+    printf("Enter a string: ");
+    scanf("%s",str);
+
+    len = strlen(str);
+    j = 0;
+
+    // reverse the string
+    for(i = len - 1; i &gt;= 0; i--) {
+        rev[j] = str[i];
+        j++;
+    }
+    rev[j] = '\0';  // null terminate
+
+    // compare original and reversed string
+    if(strcmp(str, rev) == 0)
+        printf("\nString is Palindrome.");
+    else
+        printf("\nString is not Palindrome.");
+
+    return 0;
+}
+/*OUTPUT*/
+/*INPUT:
+Enter a string: MADAM
+o/p:
+String is Palindrome.
+*/ 
+/* I/P:
+Enter a string: HELLO
+O/P:
+String is not Palindrome.
+*/
+
+<a href="9.string.html">String</a>
+
+</html></body></pre>
